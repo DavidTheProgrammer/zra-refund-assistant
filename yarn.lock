@@ -1042,6 +1042,23 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@clr/angular@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@clr/angular/-/angular-4.0.2.tgz#01cda11182631de302e9c6997db465d27ccf6b3d"
+  integrity sha512-ce3pVGFKuIZLdEmmO2ouAcQcyjI82BByfKwxRT08VkpL5O6fKtHH6dXRLdZzicI5ozvT7F+gBlpZ8VbQsPvEAw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@clr/icons@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@clr/icons/-/icons-4.0.2.tgz#50b70393df85ad3c9e6a604d4ff20331c69ba4e1"
+  integrity sha512-EXkneSxQhXx4RinA8v0Rf/Ea0PZ7kezblukt3zxKbtIDtST3TPlAhkGst522gHiyFtzgOAipOmFx8NsZs3YF7A==
+
+"@clr/ui@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@clr/ui/-/ui-4.0.2.tgz#1cd6c2f0c595f3ffe42211f0fc17b090f93d5e44"
+  integrity sha512-BRkU4vnwOBq6+Dhp5KOSS70nozNkl+7TS6U8XBjYgAJbNOcRxnVCs3gR0KeQrrn61yY+KzY2hCgSukI2Gw+Sqg==
+
 "@istanbuljs/schema@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
@@ -1349,6 +1366,11 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@webcomponents/webcomponentsjs@^2.0.0":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.4.4.tgz#14b7e78da47f8f0071ff96c35335b871534179bc"
+  integrity sha512-UWXZYbaDLLfhm+xONXTiDciyhOSwKRrZieGQHFMSMGSxY4mbjZ5uYzOKgnuX0luYFvjJw32G3r0sCwQZPJIR4Q==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
