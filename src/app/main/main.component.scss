@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 
+  &-menu-button {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
   &-content {
     overflow-y: auto;
     flex-grow: 1;

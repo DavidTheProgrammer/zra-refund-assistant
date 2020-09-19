@@ -1,1 +1,15 @@
-<p>It works</p>
+<div class="p-px-3">
+  <div class="refund-datepicker">
+    <h4 class="refund-datepicker__label">Refund Month</h4>
+
+    <div>
+      <p-calendar [(ngModel)]="refundMonth"
+                  [minDate]="minDate"
+                  placeholder="MM/YYYY"
+                  view="month"
+                  showIcon="true"
+                  dateFormat="M/yy">
+      </p-calendar>
+    </div>
+  </div>
+</div>

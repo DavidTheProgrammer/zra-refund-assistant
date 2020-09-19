@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {DateTime} from 'luxon';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +7,18 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  refundMonth;
+  refundMonth: Date;
+  minDate: Date;
 
   constructor() {
   }
 
   ngOnInit(): void {
+    this.refundMonth = DateTime.utc()
+                               .toJSDate();
+
+    this.minDate = DateTime.fromFormat('01/03/2020', 'dd/MM/yyyy')
+                           .toJSDate();
   }
 
 }

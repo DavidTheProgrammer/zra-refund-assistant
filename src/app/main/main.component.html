@@ -1,11 +1,13 @@
 <div class="main">
   <p-toolbar>
     <div class="p-toolbar-group-left">
-      <p-button icon="pi pi-bars"
-                label="MENU"
-                styleClass="p-button-text"
-                (onClick)="openSidenav()">
-      </p-button>
+      <button pButton
+              type="button"
+              icon="pi pi-bars"
+              label="MENU"
+              class="p-button-text main-menu-button"
+              (click)="openSidenav()">
+      </button>
     </div>
   </p-toolbar>
 
