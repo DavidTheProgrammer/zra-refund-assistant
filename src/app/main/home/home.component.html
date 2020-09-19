@@ -1,15 +1,114 @@
-<div class="p-px-3">
-  <div class="refund-datepicker">
-    <h4 class="refund-datepicker__label">Refund Month</h4>
+<div class="p-mb-6">
 
-    <div>
-      <p-calendar [(ngModel)]="refundMonth"
-                  [minDate]="minDate"
-                  placeholder="MM/YYYY"
-                  view="month"
-                  showIcon="true"
-                  dateFormat="M/yy">
-      </p-calendar>
+  <div class="p-px-3">
+    <div class="refund-datepicker">
+      <h3 class="refund-datepicker__label">Refund Month</h3>
+
+      <div>
+        <p-calendar [(ngModel)]="refundMonth"
+                    [minDate]="minDate"
+                    [maxDate]="maxDate"
+                    [readonlyInput]="true"
+                    (onSelect)="updateDetails()"
+                    placeholder="MM/YYYY"
+                    view="month"
+                    showIcon="true"
+                    dateFormat="M/yy">
+        </p-calendar>
+      </div>
+    </div>
+
+    <div class="refund-claim p-mt-3">
+      <span class="refund-claim-label p-mr-2 p-text-secondary">
+        Refund Amount:
+      </span>
+
+      <span class="refund-claim-currency">
+        ZMW
+      </span>
+
+      <span class="refund-claim-amount">
+        {{refundAmount.amount}}
+      </span>
+    </div>
+
+    <div class="p-mt-6 quotas">
+      <h3 class="quotas__label">Remaining Quotas</h3>
+
+      <div class="p-mt-3 p-grid">
+        <div class="p-col-6">
+          <p-card subheader="Beer">
+            <div class="quotas-chart">
+              <round-progress [current]="progressBarInfo.quotas.beer.current"
+                              [max]="progressBarInfo.quotas.beer.max"
+                              [color]="'#e3a700'"
+                              [responsive]="true">
+              </round-progress>
+              <div class="quotas-chart__text">
+                {{ progressBarInfo.quotas.beer.current }} /
+                {{ progressBarInfo.quotas.beer.max }}
+                <br>
+                {{ progressBarInfo.quotas.beer.unit }}
+              </div>
+            </div>
+          </p-card>
+        </div>
+
+        <div class="p-col-6">
+          <p-card subheader="Cigarettes">
+            <div class="quotas-chart">
+              <round-progress [current]="progressBarInfo.quotas.cigarettes.current"
+                              [max]="progressBarInfo.quotas.cigarettes.max"
+                              [color]="'#007006'"
+                              [responsive]="true">
+              </round-progress>
+              <div class="quotas-chart__text">
+                {{ progressBarInfo.quotas.cigarettes.current }} /
+                {{ progressBarInfo.quotas.cigarettes.max }}
+                <br>
+                {{ progressBarInfo.quotas.cigarettes.unit }}
+              </div>
+            </div>
+          </p-card>
+        </div>
+
+        <div class="p-col-6">
+          <p-card subheader="Liquor">
+            <div class="quotas-chart">
+              <round-progress [current]="progressBarInfo.quotas.spirits.current"
+                              [max]="progressBarInfo.quotas.spirits.max"
+                              [color]="'#bdbdbd'"
+                              [responsive]="true">
+              </round-progress>
+              <div class="quotas-chart__text">
+                {{ progressBarInfo.quotas.spirits.current }} /
+                {{ progressBarInfo.quotas.spirits.max }}
+                <br>
+                {{ progressBarInfo.quotas.spirits.unit }}
+              </div>
+            </div>
+          </p-card>
+        </div>
+
+        <div class="p-col-6">
+          <p-card subheader="Wines">
+            <div class="quotas-chart">
+              <round-progress [current]="progressBarInfo.quotas.wine.current"
+                              [max]="progressBarInfo.quotas.wine.max"
+                              [color]="'#660707'"
+                              [responsive]="true">
+              </round-progress>
+              <div class="quotas-chart__text">
+                {{ progressBarInfo.quotas.wine.current }} /
+                {{ progressBarInfo.quotas.wine.max }}
+                <br>
+                {{ progressBarInfo.quotas.wine.unit }}
+              </div>
+            </div>
+          </p-card>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>

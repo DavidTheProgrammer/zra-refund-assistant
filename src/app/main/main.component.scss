@@ -8,9 +8,34 @@
   }
 
   &-content {
+    box-sizing: content-box;
     overflow-y: auto;
     flex-grow: 1;
   }
+}
+
+.sidenav {
+  background-color: #f8f9fa;
+
+  &__header {
+    &-image {
+      width: auto;
+      margin: auto;
+      transform: translateX(-0.5rem);
+    }
+  }
+
+  &__menu {
+    border-top: 1px solid lightgrey;
+    border-radius: 4px;
+
+    .p-menu {
+      width: 100%;
+      background-color: #f8f9fa;
+      border-color: transparent;
+    }
+  }
+
 }
 
 

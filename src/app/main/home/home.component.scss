@@ -6,3 +6,45 @@
     font-family: 'Poppins', sans-serif;
   }
 }
+
+.refund-claim {
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  &-label {
+  }
+
+  &-currency {
+    font-size: 1.1rem;
+  }
+
+  &-amount {
+    font-size: 1.1rem;
+  }
+}
+
+.quotas {
+  text-align: center;
+
+  &__label {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &-chart {
+    position: relative;
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.8rem;
+    }
+
+  }
+}

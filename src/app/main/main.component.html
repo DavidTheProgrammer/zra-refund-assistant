@@ -16,8 +16,19 @@
   </main>
 </div>
 
-<p-sidebar [(visible)]="sidebarOpen">
-  <div class="p-pt-6">
-    Content
+<p-sidebar [(visible)]="sidebarOpen"
+           styleClass="sidenav">
+  <div class="sidenav p-pt-6">
+    <div class="sidenav__header p-mx-3">
+      <div>
+        <img src="./assets/images/logo.png"
+             alt="ZRA Logo"
+             class="sidenav__header-image">
+      </div>
+    </div>
+
+    <div class="sidenav__menu p-mt-2 p-pt-2">
+      <p-menu [model]="items"></p-menu>
+    </div>
   </div>
 </p-sidebar>
