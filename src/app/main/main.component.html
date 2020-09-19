@@ -1,0 +1,21 @@
+<div class="main">
+  <p-toolbar>
+    <div class="p-toolbar-group-left">
+      <p-button icon="pi pi-bars"
+                label="MENU"
+                styleClass="p-button-text"
+                (onClick)="openSidenav()">
+      </p-button>
+    </div>
+  </p-toolbar>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<p-sidebar [(visible)]="sidebarOpen">
+  <div class="p-pt-6">
+    Content
+  </div>
+</p-sidebar>

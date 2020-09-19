@@ -1042,23 +1042,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@clr/angular@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@clr/angular/-/angular-4.0.2.tgz#01cda11182631de302e9c6997db465d27ccf6b3d"
-  integrity sha512-ce3pVGFKuIZLdEmmO2ouAcQcyjI82BByfKwxRT08VkpL5O6fKtHH6dXRLdZzicI5ozvT7F+gBlpZ8VbQsPvEAw==
-  dependencies:
-    tslib "^2.0.0"
-
-"@clr/icons@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@clr/icons/-/icons-4.0.2.tgz#50b70393df85ad3c9e6a604d4ff20331c69ba4e1"
-  integrity sha512-EXkneSxQhXx4RinA8v0Rf/Ea0PZ7kezblukt3zxKbtIDtST3TPlAhkGst522gHiyFtzgOAipOmFx8NsZs3YF7A==
-
-"@clr/ui@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@clr/ui/-/ui-4.0.2.tgz#1cd6c2f0c595f3ffe42211f0fc17b090f93d5e44"
-  integrity sha512-BRkU4vnwOBq6+Dhp5KOSS70nozNkl+7TS6U8XBjYgAJbNOcRxnVCs3gR0KeQrrn61yY+KzY2hCgSukI2Gw+Sqg==
-
 "@istanbuljs/schema@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
@@ -6768,6 +6751,23 @@ prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+
+primeflex@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/primeflex/-/primeflex-2.0.0.tgz#b4152a97a455bbfad33503b6e10fe73d1f9e2228"
+  integrity sha512-t6AG3iRI1rh04uI+9nC4JSlbKfA8PnpRDFtjyqi3rDSLRgdfOuhIiunJbjVQ4alnnCfuQAAbVyde1AKN9QxT/w==
+
+primeicons@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-4.0.0.tgz#a3594b3af213dcf8c4c3d6fc99eea05b7c92f57c"
+  integrity sha512-JQBIswGSItn8I0Pq21RchENpKJxSi1MjfBDfggMQpXtoKNKblJoHmol/7tCV3CAV2Dlb94ht8TD8qdIAW01pGg==
+
+primeng@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-10.0.0.tgz#5875d1b693a9f41feb905aaded1228b0b61bcc1d"
+  integrity sha512-3W2AN6YvSPC9v78XgGQ/xJ7e4aQR1vECVXQioy5Av5sxM7LBB4aEgqnQt5jCxMXl/NDXTVIsjKVWIVvl/nPsXA==
+  dependencies:
+    tslib "^2.0.0"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
