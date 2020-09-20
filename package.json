@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --output-path docs --base-href zra-refund-assistant/ && git add . && git commit -m \"deploying to github\" && git push"
+    "deploy": "ng build --prod --output-path docs --base-href \/zra-refund-assistant\/ && git add . && git commit -m \"deploying to github\" && git push"
   },
   "license": "private",
   "private": true,
