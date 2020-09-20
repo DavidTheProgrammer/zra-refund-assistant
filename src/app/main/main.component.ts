@@ -16,7 +16,6 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.openSidenav();
 
     this.items = [
       {label: 'New', icon: 'pi pi-fw pi-plus'},
