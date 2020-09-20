@@ -18,13 +18,43 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
 
     this.items = [
-      {label: 'New', icon: 'pi pi-fw pi-plus'},
-      {label: 'Open', icon: 'pi pi-fw pi-download'},
-      {label: 'Undo', icon: 'pi pi-fw pi-refresh'}
+      {
+        label: 'New',
+        icon: 'pi pi-fw pi-plus',
+        items: [
+          {
+            label: 'Purchase',
+            icon: 'pi pi-fw pi-shopping-cart',
+            routerLink: 'new-purchase',
+            command: (event => this.closeSidenav())
+          },
+          {
+            label: 'Refund Claim',
+            icon: 'pi pi-fw pi-money-bill',
+            command: (event => this.closeSidenav())
+          }
+        ]
+      },
+      {
+        label: 'Home',
+        icon: 'pi pi-fw pi-home',
+        routerLink: '/',
+        command: (event => this.closeSidenav())
+      },
+
+      {
+        label: 'History',
+        icon: 'pi pi-fw pi-list',
+        command: (event => this.closeSidenav())
+      }
     ];
   }
 
   openSidenav(): void {
     this.sidebarOpen = true;
+  }
+
+  closeSidenav(): void {
+    this.sidebarOpen = false;
   }
 }

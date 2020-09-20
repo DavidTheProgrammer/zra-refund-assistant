@@ -11,12 +11,14 @@ import {FormsModule} from '@angular/forms';
 import {SidebarModule} from 'primeng/sidebar';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
-import {MenuModule} from 'primeng/menu';
+import {PanelMenuModule} from 'primeng/panelmenu';
+import {NewPurchaseComponent} from './main/new-purchase/new-purchase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    NewPurchaseComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import {MenuModule} from 'primeng/menu';
     ButtonModule,
     SidebarModule,
     ToolbarModule,
-    MenuModule,
+    PanelMenuModule,
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
   ],
   providers: [],
